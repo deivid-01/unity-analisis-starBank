@@ -27,8 +27,10 @@ public class DataBase : MonoBehaviour
     {
       
     }
+    #region Functions
 
-   public  void CreateClient()
+
+    public  void CreateClient()
     {
         
         RestClient.Post(url: "https://analisis-firebase.firebaseio.com/.json", new User("david",22));
@@ -72,7 +74,7 @@ public class DataBase : MonoBehaviour
     }
 
 
-
+    #endregion
 
 
 
