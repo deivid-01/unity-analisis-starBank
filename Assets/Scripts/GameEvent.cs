@@ -26,24 +26,23 @@ public class GameEvent : MonoBehaviour
     #endregion
 
 
-    public event Action <int> OpenScene;
+    public event Action <string> OpenScene;
+    public event Action  OnLoginSucceded;
+    public event Action  OnLoginFail;
+    public event Action  OnClientFound;
+    public event Action  OnClientDontFound;
+    public event Action  OnDeleteClient;
 
 
-    public void OpenNextScene ( int index ) => OpenScene?.Invoke ( index );
+
+    public void OpenNextScene ( string nameScene ) => OpenScene?.Invoke ( nameScene );
+    public void LoginSucceded () => OnLoginSucceded?.Invoke ();
+    public void FailLogin () => OnLoginFail?.Invoke ();
+    public void ClientFound () => OnClientFound?.Invoke ();
+    public void ClientDontFound () => OnClientDontFound?.Invoke ();
+    public void DeleteClient () => OnDeleteClient?.Invoke ();
 
 
-    /*
-    private void Update ()
-    {
-        if ( Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            
-            SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex+1);
-        }
-        else  if ( Input.GetKeyDown ( KeyCode.LeftArrow ) )
-        {
-            SceneManager.LoadScene ( SceneManager.GetActiveScene ().buildIndex - 1 );
-        }
-    }
-    */
+
+
 }

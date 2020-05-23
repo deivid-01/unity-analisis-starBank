@@ -22,18 +22,24 @@ public class SceneController : MonoBehaviour
 
     #endregion 
 
+    public string name;
     void Start ()
     {
         if (isNew)
         {
-            GameEvent.instance.OpenScene += OpenNextScene;       
+            GameEvent.instance.OpenScene += OpenNextScene;          
+           
         }
     }
 
-    void OpenNextScene ( int index )
-    {
+    void OpenNextScene ( string n ) { 
+        SceneManager.LoadScene ( n );
 
-        SceneManager.LoadScene ( index );
     }
-    
+
+  
+
+   
+
+
 }
