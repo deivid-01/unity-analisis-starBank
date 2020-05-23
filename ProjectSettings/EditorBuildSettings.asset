@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Login.unity
     guid: 61ba214a1117a29488ec4b41af9bb3fb
+  - enabled: 1
+    path: Assets/Scenes/addClientCompany.unity
+    guid: 7d2a79a3f43588d44a9351d94a56c27b
+  - enabled: 1
+    path: Assets/Scenes/addClientNatural.unity
+    guid: f4325092f3b3d764480e480c3a48e803
+  - enabled: 1
+    path: Assets/Scenes/HomeAccount.unity
+    guid: 3b0d5a67e372ffc4ba2a57b027fb0a96
+  - enabled: 1
+    path: Assets/Scenes/HomeClient.unity
+    guid: f0b61e9e21ac6d540b962d75b90a9e9a
+  - enabled: 1
+    path: Assets/Scenes/HomeOfficeBranch.unity
+    guid: 3ccb51b620133cd48bc4d8ccce17a453
   m_configObjects: {}
