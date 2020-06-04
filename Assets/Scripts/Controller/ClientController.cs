@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class ClientController : MonoBehaviour
@@ -7,6 +8,8 @@ public class ClientController : MonoBehaviour
 
     #region Singlenton
     public static ClientController instance;
+
+    private static dynamic client;
 
     private void Awake ()
     {
@@ -25,5 +28,9 @@ public class ClientController : MonoBehaviour
         GameEvent.instance.OpenNextScene ( "HomeOfficeBranch" );
     }
     #endregion
+
+    public static void SetClient( dynamic cli ) {
+        client = cli;
+    }
 
 }
